@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Stock Shop</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="assets/img/favicon.png">
+	<!-- Bootstrap CSS -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">  
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<!-- Fontawesome -->
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css" />
+
+
+</head>
+<body>
+
+	<section id="header" class="header">
+		<div class="nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-3 col-sm-3 col-md-3 col-lg-2">
+						<div class="brand">
+							<a href="index.html">
+								<img src="assets/images/logo.png">
+							</a>
+						</div>
+					</div>
+					<div class="col-9 col-sm-9 col-md-9 col-lg-10">
+						<div class="nav-menu">
+							<ul>								
+								<li class="hide-m">
+									<a href="index.html">
+										Home
+									</a>
+								</li>
+								<li class="hide-m">
+									<a href="produk.html">
+										Product
+									</a>
+								</li>
+								<li class="hide-m">
+									<a href="sale.html">
+										Sale
+									</a>
+								</li>
+								<li class="hide-m">
+									<a href="brand.html">
+										Brand
+									</a>
+								</li>
+								<li class="hide-m">
+									<a href="login.html" class="login">
+										Login
+									</a>
+								</li>
+								<li class="hide-m">
+									<div>
+										<input type="text" class="form-control " id="" placeholder="Search.....">
+										<span class="icon-search">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</span>
+										
+									</div>
+								</li>
+								<li class="show-m"> 
+									<div id="wrap">
+										<form action="" autocomplete="on">
+											<input id="search" name="search" type="text" placeholder=" Search">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</form>
+									</div>
+								</li>
+								<!-- <li class="hide-m">
+									<a href="" class="login">
+										<i class="fa fa-heart" aria-hidden="true"></i>
+									</a>
+								</li> -->
+								<li class="hide-m">
+									<a href="cart.html">
+										<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+										<span class="badge-cart">0</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Mobile menu -->
+	<div class="mobile-menu">
+		<div class="container">
+			<div class="d-flex bd-highlight" align="center">
+				<div class="p-2 flex-fill bd-highlight">
+					<a href="">
+						<i class="fa fa-home" aria-hidden="true"></i>
+						<h6>Home</h6>
+					</a>
+				</div>
+				<div class="p-2 flex-fill bd-highlight">
+					<a href="">
+						<i class="fa fa-list" aria-hidden="true"></i>
+						<h6>Product</h6>
+					</a>
+				</div>
+				<div class="p-2 flex-fill bd-highlight">
+					<a href="">
+						<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+						<span class="badge-cart">0</span>
+						<h6>Cart</h6>
+					</a>
+				</div>
+				<div class="p-2 flex-fill bd-highlight">
+					<a href="">
+						<i class="fa fa-heart-o" aria-hidden="true"></i>
+						<h6>Whishlist</h6>
+					</a>
+				</div>
+				<div class="p-2 flex-fill bd-highlight">
+					<a href="">
+						<i class="fa fa-home" aria-hidden="true"></i>
+						<h6>Profil</h6>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="page-content" class="page-content">
+		<div class="container">
+			<div class="alert alert-warning alert-dismissible fade show" role="alert">			
+				<i class="fa fa-tag" aria-hidden="true"></i> discount 40%  for all products, use code: <b> SS2020</b>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div id="product" class="product">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-4 col-lg-3">
+						<div class="panel-filter hide-panel">
+							<div class="accordion" id="accordionExample">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<a class="btn link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												Category <span></span>
+											</a>
+										</h2>
+									</div>
+
+									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+										<div class="card-body">
+											
+											<div>
+												<div>
+													<input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
+													<label for="checkbox-1" class="checkbox-custom-label">Accessories</label>
+												</div>
+												<div>
+													<input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox" checked>
+													<label for="checkbox-2" class="checkbox-custom-label">T-shirt</label>
+												</div>
+												<div>
+													<input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox" checked>
+													<label for="checkbox-3" class="checkbox-custom-label">Jacket</label>
+												</div>
+												<div>
+													<input id="checkbox-4" class="checkbox-custom" name="checkbox-4" type="checkbox" checked>
+													<label for="checkbox-4" class="checkbox-custom-label">Pants</label>
+												</div>
+												<div>
+													<input id="checkbox-5" class="checkbox-custom" name="checkbox-5" type="checkbox" checked>
+													<label for="checkbox-5" class="checkbox-custom-label">Watch</label>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingTwo">
+										<h2 class="mb-0">
+											<a class="btn link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+												Brand <span></span>
+											</a>
+										</h2>
+									</div>
+									<div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+										<div class="card-body">
+											<div class="form-group mt-3">
+												<input type="text"  class="form-control form-control-sm" id="" placeholder="Search Brand">
+											</div>
+											<div class="mt-2">
+												<div>
+													<input id="checkbox-6" class="checkbox-custom" name="checkbox-6" type="checkbox" checked>
+													<label for="checkbox-6" class="checkbox-custom-label">Adidas</label>
+												</div>
+												<div>
+													<input id="checkbox-7" class="checkbox-custom" name="checkbox-7" type="checkbox" checked>
+													<label for="checkbox-7" class="checkbox-custom-label">Casio</label>
+												</div>
+												<div>
+													<input id="checkbox-8" class="checkbox-custom" name="checkbox-8" type="checkbox" checked>
+													<label for="checkbox-8" class="checkbox-custom-label">Nike</label>
+												</div>
+												<div>
+													<input id="checkbox-9" class="checkbox-custom" name="checkbox-9" type="checkbox" checked>
+													<label for="checkbox-9" class="checkbox-custom-label">Kickers</label>
+												</div>
+												<div>
+													<input id="checkbox-10" class="checkbox-custom" name="checkbox-10" type="checkbox" checked>
+													<label for="checkbox-10" class="checkbox-custom-label">Vans</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingFour">
+										<h2 class="mb-0">
+											<a class="btn link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+												Gender <span></span>
+											</a>
+										</h2>
+									</div>
+
+									<div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+										<div class="card-body">
+											
+											<div>
+												<div>
+													<input id="checkbox-11" class="checkbox-custom" name="checkbox-11" type="checkbox" checked>
+													<label for="checkbox-11" class="checkbox-custom-label">Women</label>
+												</div>
+												<div>
+													<input id="checkbox-12" class="checkbox-custom" name="checkbox-12" type="checkbox" checked>
+													<label for="checkbox-12" class="checkbox-custom-label">Men</label>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingThree">
+										<h2 class="mb-0">
+											<a class="btn link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+												Price Range <span></span>
+											</a>
+										</h2>
+									</div>
+									<div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+										<div class="card-body">
+											<div class="form-group mb-3">
+												<label for="">Min Range</label>
+												<input type="number" min="0" class="form-control form-control-sm" id="" >
+											</div>
+											<div class="form-group">
+												<label for="">Max Range</label>
+												<input type="number" min="0" class="form-control form-control-sm" id="" >
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-8 col-lg-9">
+						<div class="box-filter">
+							<div class="row">
+								<div class="col-8 col-sm-8 col-md-8 col-lg-9">
+									<h5 class="pt-2">
+										Search product :
+									</h5>
+								</div>
+								<div class="col-4 col-sm-4 col-md-4 col-lg-3">
+									<div class="form-group">
+										<select class="form-control form-control-sm" id="">
+											<option>Popularity</option>
+											<option>Newest</option>
+											<option>Price Low</option>
+											<option>Price Hight</option>
+											<option>Discount</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+								<div class="product-card product-page">
+									<div class="cover">
+										<a href="detail_product.html">
+											<img src="assets/images/sepatu.jpeg" class="thubmnail-product">
+										</a>
+										<span class="sale">
+											50%
+										</span>
+									</div>
+									<div class="body-product">
+										<h5>
+											Nike Zoom X
+										</h5>
+										<h6>
+											AeroSports
+										</h6>
+										<div class="ratting-star">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+										</div>
+										<h4>
+											<span>Rp. 1.500.000 </span>Rp. 750.000
+										</h4>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+								<div class="product-card product-page">
+									<div class="cover">
+										<a href="detail_product.html">
+											<img src="assets/images/tas.jpeg" class="thubmnail-product">
+										</a>
+										<span class="sale">
+											60%
+										</span>
+									</div>
+									<div class="body-product">
+										<h5>								
+											Shoppie Paris
+										</h5>
+										<h6>
+											RD Shop
+										</h6>
+										<div class="ratting-star">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+										</div>
+										<h4>
+											<span>Rp. 1.000.000 </span>Rp. 400.000
+										</h4>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+								<div class="product-card product-page">
+									<div class="cover">
+										<a href="detail_product.html">
+											<img src="assets/images/jam.jpeg" class="thubmnail-product">
+										</a>
+										<span class="sale">
+											20%
+										</span>
+									</div>
+									<div class="body-product">
+										<h5>
+											Tissot
+										</h5>
+										<h6>
+											Aero Watch
+										</h6>
+										<div class="ratting-star">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+										</div>
+										<h4>
+											<span>Rp. 1.000.000 </span>Rp. 800.000
+										</h4>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+								<div class="product-card product-page">
+									<div class="cover">
+										<a href="detail_product.html">
+											<img src="assets/images/jaket.jpeg" class="thubmnail-product">
+										</a>
+										<span class="sale">
+											10%
+										</span>
+									</div>
+									<div class="body-product">
+										<h5>
+											Jacket Denim
+										</h5>
+										<h6>
+											RD Shop
+										</h6>
+										<div class="ratting-star">
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star-half-o" aria-hidden="true"></i>
+										</div>
+										<h4>
+											<span>Rp. 300.000 </span>Rp. 270.000
+										</h4>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Filter mobile show -->
+	<div>
+		<span class="btn-filter" onclick="openNav()">
+			<i class="fa fa-filter" aria-hidden="true"></i> Filter
+		</span>
+
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<div class="panel-filter">
+					<div class="accordion" id="accordionExample">
+						<div class="card">
+							<div class="card-header" id="headingOne">
+								<h2 class="mb-0">
+									<a class="btn link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										Category <span></span>
+									</a>
+								</h2>
+							</div>
+
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div class="card-body">
+
+									<div>
+										<div>
+											<input id="checkbox1" class="checkbox-custom" name="checkbox1" type="checkbox" checked>
+											<label for="checkbox1" class="checkbox-custom-label">Accessories</label>
+										</div>
+										<div>
+											<input id="checkbox2" class="checkbox-custom" name="checkbox2" type="checkbox" checked>
+											<label for="checkbox2" class="checkbox-custom-label">T-shirt</label>
+										</div>
+										<div>
+											<input id="checkbox3" class="checkbox-custom" name="checkbox3" type="checkbox" checked>
+											<label for="checkbox3" class="checkbox-custom-label">Jacket</label>
+										</div>
+										<div>
+											<input id="checkbox4" class="checkbox-custom" name="checkbox4" type="checkbox" checked>
+											<label for="checkbox4" class="checkbox-custom-label">Pants</label>
+										</div>
+										<div>
+											<input id="checkbox5" class="checkbox-custom" name="checkbox5" type="checkbox" checked>
+											<label for="checkbox5" class="checkbox-custom-label">Watch</label>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingTwo">
+								<h2 class="mb-0">
+									<a class="btn link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Brand <span></span>
+									</a>
+								</h2>
+							</div>
+							<div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+								<div class="card-body">
+									<div class="form-group mt-3">
+										<input type="text"  class="form-control form-control-sm" id="" placeholder="Search Brand">
+									</div>
+									<div class="mt-2">
+										<div>
+											<input id="checkbox6" class="checkbox-custom" name="checkbox6" type="checkbox" checked>
+											<label for="checkbox6" class="checkbox-custom-label">Adidas</label>
+										</div>
+										<div>
+											<input id="checkbox7" class="checkbox-custom" name="checkbox7" type="checkbox" checked>
+											<label for="checkbox7" class="checkbox-custom-label">Casio</label>
+										</div>
+										<div>
+											<input id="checkbox8" class="checkbox-custom" name="checkbox8" type="checkbox" checked>
+											<label for="checkbox8" class="checkbox-custom-label">Nike</label>
+										</div>
+										<div>
+											<input id="checkbox9" class="checkbox-custom" name="checkbox9" type="checkbox" checked>
+											<label for="checkbox9" class="checkbox-custom-label">Kickers</label>
+										</div>
+										<div>
+											<input id="checkbox10" class="checkbox-custom" name="checkbox10" type="checkbox" checked>
+											<label for="checkbox10" class="checkbox-custom-label">Vans</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingFour">
+								<h2 class="mb-0">
+									<a class="btn link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+										Gender <span></span>
+									</a>
+								</h2>
+							</div>
+
+							<div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+								<div class="card-body">
+
+									<div>
+										<div>
+											<input id="checkbox11" class="checkbox-custom" name="checkbox11" type="checkbox" checked>
+											<label for="checkbox11" class="checkbox-custom-label">Women</label>
+										</div>
+										<div>
+											<input id="checkbox12" class="checkbox-custom" name="checkbox12" type="checkbox" checked>
+											<label for="checkbox12" class="checkbox-custom-label">Men</label>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingThree">
+								<h2 class="mb-0">
+									<a class="btn link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Price Range <span></span>
+									</a>
+								</h2>
+							</div>
+							<div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+								<div class="card-body">
+									<div class="form-group mb-3">
+										<label for="">Min Range</label>
+										<input type="number" min="0" class="form-control form-control-sm" id="" >
+									</div>
+									<div class="form-group">
+										<label for="">Max Range</label>
+										<input type="number" min="0" class="form-control form-control-sm" id="" >
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<section id="footer" class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<div class="mb-3">
+						<h1>
+							<b>
+								Stock Shop
+							</b>
+						</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 col-lg-3">
+					<div class="mb-3">
+						<h5>
+							SERVICE 
+						</h5>
+						<li>
+							<a href="">
+								Help
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Payment
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Transfer Confirmation
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Our Partners
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Return Way
+							</a>
+						</li>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 col-lg-2">
+					<div class="mb-3">
+						<h5>
+							ABOUT  
+						</h5>
+						<li>
+							<a href="">
+								About Us
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Privacy policy
+							</a>
+						</li>
+						<li>
+							<a href="">								
+								Terms & Conditions
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Career
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Blog
+							</a>
+						</li>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-12 col-lg-3">
+					<div class="sosmed mb-3">
+						<h5>
+							FOLLOW ME
+						</h5>
+						<a href="">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fa fa-twitter-square" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fa fa-facebook-square" aria-hidden="true"></i>
+						</a>
+						<h5 class="mt-4">
+							DOWNLOAD APPS
+						</h5>
+						<a href="">
+							<img src="assets/images/play-store.png">
+						</a>
+						<a href="">
+							<img src="assets/images/app-store.png">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="border-top2">
+				<h6 class="pt-3" align="center">
+					Copyright ©2020 <span> StockShop </span>. All rights Reserved
+				</h6>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+	<script src="js/script.js"></script>
+</body>
+</html>

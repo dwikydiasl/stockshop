@@ -1,0 +1,797 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Stock Shop</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="assets/img/favicon.png">
+	<!-- Bootstrap CSS -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">  
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<!-- Fontawesome -->
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css" />
+
+
+</head>
+<body>
+
+	<section id="header" class="header">
+		<div class="nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-3 col-sm-3 col-md-3 col-lg-2">
+						<div class="brand">
+							<a href="index.html">
+								<img src="assets/images/logo.png">
+							</a>							
+						</div>
+					</div>
+					<div class="col-9 col-sm-9 col-md-9 col-lg-10">
+						<div class="nav-menu">
+							<ul>								
+								<li class="hide-m">
+									<a href="index.html">
+										Home
+									</a>
+								</li>
+								<li class="hide-m">
+									<a href="produk.html">
+										Product
+									</a>
+								</li>
+								<li class="hide-m">
+									<a href="sale.html">
+										Sale
+									</a>
+								</li>
+								<li class="hide-m">
+									<a href="brand.html">
+										Brand
+									</a>
+								</li>
+								<li class="hide-m">
+									<a href="login.html" class="login">
+										Login
+									</a>
+								</li>
+								<li class="hide-m">
+									<div>
+										<input type="text" class="form-control " id="" placeholder="Search.....">
+										<span class="icon-search">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</span>
+										
+									</div>
+								</li>
+								<li class="show-m"> 
+									<div id="wrap">
+										<form action="" autocomplete="on">
+											<input id="search" name="search" type="text" placeholder=" Search">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</form>
+									</div>
+								</li>
+								<!-- <li class="hide-m">
+									<a href="" class="login">
+										<i class="fa fa-heart" aria-hidden="true"></i>
+									</a>
+								</li> -->
+								<li class="hide-m">
+									<a href="cart.html">
+										<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+										<span class="badge-cart">0</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Mobile menu -->
+	<div class="mobile-menu">
+		<div class="container">
+			<div class="d-flex bd-highlight" align="center">
+				<div class="p-2 flex-fill bd-highlight">
+					<a href="">
+						<i class="fa fa-home" aria-hidden="true"></i>
+						<h6>Home</h6>
+					</a>
+				</div>
+				<div class="p-2 flex-fill bd-highlight">
+					<a href="">
+						<i class="fa fa-list" aria-hidden="true"></i>
+						<h6>Product</h6>
+					</a>
+				</div>
+				<div class="p-2 flex-fill bd-highlight">
+					<a href="">
+						<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+						<span class="badge-cart">0</span>
+						<h6>Cart</h6>
+					</a>
+				</div>
+				<div class="p-2 flex-fill bd-highlight">
+					<a href="">
+						<i class="fa fa-heart-o" aria-hidden="true"></i>
+						<h6>Whishlist</h6>
+					</a>
+				</div>
+				<div class="p-2 flex-fill bd-highlight">
+					<a href="">
+						<i class="fa fa-home" aria-hidden="true"></i>
+						<h6>Profil</h6>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="page-content" class="page-content">
+		<div class="container">
+
+			<div class="alert alert-warning alert-dismissible fade show" role="alert">			
+				<i class="fa fa-tag" aria-hidden="true"></i> discount 40%  for all products, use code: <b> SS2020</b>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+
+			<div id="detail-product" class="detail-product">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item"><a href="#">Men</a></li>
+						<li class="breadcrumb-item"><a href="#">Clothes</a></li>
+						<li class="breadcrumb-item"><a href="#">T-shirt</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Puma Apparel </li>
+					</ol>
+				</nav>
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<div class="thumbnail-product-detail">
+							<img id="expandedImg" src="assets/images/gallery-1.jpg" style="width:100%">
+							<div id="imgtext"></div>
+						</div>
+						<div>
+							<div class="row">
+								<div class="column listImg">
+									<img src="assets/images/gallery-1.jpg" class="list-tab-img active"  onclick="clickThumbnail(this);">
+								</div>
+								<div class="column listImg">
+									<img src="assets/images/gallery-2.jpg" class="list-tab-img" onclick="clickThumbnail(this);">
+								</div>
+								<div class="column listImg">
+									<img src="assets/images/gallery-3.jpg"  class="list-tab-img" onclick="clickThumbnail(this);">
+								</div>
+								<div class="column listImg">
+									<img src="assets/images/gallery-4.jpg" class="list-tab-img" onclick="clickThumbnail(this);">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-8 col-lg-5 col-xl-5">
+						<div class="desc-product">
+							<h5>
+								<b>
+									T-shirt Puma Apparel
+								</b>								
+							</h5>
+							<div class="ratting-star mb-2">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<h6 class="price">
+								<span>Rp. 150.000</span> Rp 75.000
+							</h6>
+							<hr>
+							<h6 class="colour-product grey">
+								Colour : Maroon <i class="fa fa-square" aria-hidden="true"></i>
+							</h6>
+							<div class="row margin-size">
+								<div class="col-6 col-md-4">
+									<div class="form-group">
+										<label for="" class="grey">Size :</label>
+										<select class="form-control" id="">
+											<option>S</option>
+											<option>M</option>
+											<option>L</option>
+											<option>XL</option>
+											<option>XXL</option>
+										</select>
+										<span class="sort-icon">
+											<i class="fa fa-sort" aria-hidden="true"></i>
+										</span>
+									</div>
+								</div>
+								<div class="col-6 col-md-4">
+									<div class="form-group">
+										<label for="" class="grey">Quantity :</label>
+										<div class="quantity">
+											<input type="number" step="1" min="0" max="" value="1" title="Qty" class="input-text qty text form-control" size="4" pattern="[0-9]*" inputmode="numeric">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d-flex flex-row bd-highlight mb-2 deliver">
+								<div class="pt-1 bd-highlight">
+									<label for="" class="grey"><i class="fa fa-truck" aria-hidden="true"></i> Delivery to :</label>
+								</div>
+								<div class=" bd-highlight">
+									<select class="form-control" id="">
+										<option>Jakarta Pusat</option>
+										<option>Jakarta Barat</option>
+										<option>Jakarta Timur</option>
+									</select>
+								</div>
+							</div>
+							<div class="shipping-cost">
+								<div class="">
+									<h6 class="grey " onclick="deliverTo()">
+										shipping cost : RP 15.000 - RP 22.000 
+										<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>								
+									</h6>
+									<div id="tooldeliverTo">
+										<div class="table-responsive tbl-delivery">
+											<table class="table ">
+												<thead>
+													<tr style="font-size: 10px">
+														<th scope="col">Shipping Partner</th>
+														<th scope="col">Fee</th>
+														<th scope="col">Delivery Time</th>
+													</tr>
+												</thead>
+												<tbody style="font-size: 10px">
+													<tr>
+														<th scope="row">Sicepat Express</th>
+														<td>RP 15.000</td>
+														<td>3-4 working days</td>
+													</tr>
+													<tr>
+														<th scope="row">J&T</th>
+														<td>RP 15.000</td>
+														<td>3-4 working days</td>
+													</tr>
+													<tr>
+														<th scope="row">JNE</th>
+														<td>RP 15.000</td>
+														<td>3-4 working days</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										
+									</div>									
+								</div> 
+								
+							</div>
+							
+							<div class="mt-4">
+								<button type="button" class=" btn-outline mr-2 mb-3">
+									<i class="fa fa-shopping-bag" aria-hidden="true"></i> ADD TO CART
+								</button>
+								<button type="button" class=" btn-primary">
+									BUY NOW
+								</button>
+							</div>
+
+							<hr>
+							<div class="d-flex flex-row bd-highlight mb-3">
+								<div class=" bd-highlight border-right pr-2 mr-2">
+									<a href="" class="add-whistlist">
+										<i class="fa fa-heart-o" aria-hidden="true"></i> Wishlist
+									</a>
+								</div>
+								<div class=" bd-highlight shared">
+									<span>Share : </span>
+									<a href="">
+										<i class="fa fa-facebook-square" aria-hidden="true"></i>
+									</a>
+									<a href="">
+										<i class="fa fa-twitter-square" aria-hidden="true"></i>
+									</a>
+									<a href="">
+										<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+						<div class="panel-shop">
+							<div class="d-flex flex-row bd-highlight mb-3">
+								<div class="bd-highlight">
+									<img src="assets/images/shop.png">
+								</div>
+								<div class="bd-highlight">
+									<h6  class="name-retail">
+										Sportstation <i class="fa fa-check-circle" aria-hidden="true"></i>
+									</h6>
+									<small class="label-retail">
+										Top Seller
+									</small>
+								</div>
+							</div>
+							<div class="desc-retail">	
+								<h5>
+									Seller Information
+								</h5>
+								<h6>
+									Seller Since : 2017
+								</h6>							
+								<h6>
+									Last order : 1 hours
+								</h6>
+								<h6>								
+									Products sold : 150
+								</h6>
+								<h6>
+									Avg Rating : 4.9
+								</h6>
+
+								<h6>
+									Address : Jl. Ahmad Yani no 80 Jakarta
+								</h6>
+							</div>
+							<div class="link-retail mt-4">
+								<button type="button" class=" btn-outline mb-3">
+									<i class="fa fa-commenting-o" aria-hidden="true"></i> CHART
+								</button>
+								<a type="button" class=" btn-primary">
+									VISIT THE SHOP
+								</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="my-4">
+					<ul class="nav  tab-desc" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<a class="nav-link active" id="desciption-p-tab" data-toggle="tab" href="#desciption-p" role="tab" aria-controls="desciption-p" aria-selected="true">Description</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Review</a>
+						</li>
+					</ul>
+					<div class="tab-content tab-content-desc" id="myTabContent">
+						<div class="tab-pane fade show active" id="desciption-p" role="tabpanel" aria-labelledby="desciption-p-tab">
+							<div class="my-3">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								</p>
+								<p>
+									SIZE Chart<br>
+									XS : Body Width 46cm x Body Lenght 66cm.<br>
+									S : Body Width 48cm x Body Lenght 68cm<br>
+									M :Body Width 50cm x Body Lenght 70cm<br>
+									L : Body Width 52cm x Body Lenght 72cm<br>
+									XL : Body Width 54cm x Body Lenght 74cm<br>
+								</p>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+							<div class="my-3">
+								<div class="d-flex flex-row bd-highlight mb-3">
+									<div class="p-2 bd-highlight">
+										<div>
+											<h4>
+												<span class="label-ratting">
+													4.9
+												</span>
+											</h4>
+											<div class="ratting-star mb-2">
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</div>
+										</div>
+									</div>
+									<div class="p-2 flex-fill bd-highlight">
+										<div class="select-ratting">
+											<div class="custom-radio2">
+												<input type="radio" id="all" name="selector">
+												<label for="all" class="all">
+													All Review
+												</label>
+											</div>
+
+											<div class="custom-radio2">
+												<input type="radio" id="5star" name="selector">
+												<label for="5star" class="5star ">
+													5 Star
+												</label>
+											</div>
+
+											<div class="custom-radio2">
+												<input type="radio" id="4star" name="selector">
+												<label for="4star" class="4star">
+													4 Star
+												</label>
+											</div>
+											<div class="custom-radio2">
+												<input type="radio" id="3star" name="selector">
+												<label for="3star" class="3star">
+													3 Star
+												</label>
+											</div>
+											<div class="custom-radio2">
+												<input type="radio" id="2star" name="selector">
+												<label for="2star" class="2star">
+													2 Star
+												</label>
+											</div>
+											<div class="custom-radio2">
+												<input type="radio" id="1star" name="selector">
+												<label for="1star" class="1star">
+													1 Star
+												</label>
+											</div>
+											<div class="custom-radio2">
+												<input type="radio" id="viewmedia" name="selector">
+												<label for="viewmedia" class="viewmedia">
+													Review with media
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<hr>
+								<div>
+									<div class="d-flex flex-row bd-highlight mb-3 review-member">
+										<div class="p-2 bd-highlight">
+											<img src="assets/images/user.jpg" class="user-pict">
+										</div>
+										<div class="p-2 bd-highlight">
+											<h6>
+												Chris Evans
+											</h6>
+											<div class="ratting-star mb-2">
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</div>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											</p>
+
+											<!-- Replay From Retail/shop -->
+											<div class="d-flex flex-row bd-highlight">
+												<div class="p-2 bd-highlight">
+													<img src="assets/images/shop.png" class="user-pict">
+												</div>
+												<div class="p-2 bd-highlight">
+													<h6>
+														Sportstation <i class="fa fa-check-circle" aria-hidden="true"></i>
+													</h6>
+													<p>
+														Thank you
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="d-flex flex-row bd-highlight mb-3 review-member">
+										<div class="p-2 bd-highlight">
+											<img src="assets/images/user-1.png" class="user-pict">
+										</div>
+										<div class="p-2 bd-highlight">
+											<h6>
+												Eva Cecilia
+											</h6>
+											<div class="ratting-star mb-2">
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</div>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- All Product -->
+				<div class="row mt-5 mb-3 linkSimilarProducts">
+					<div class="col-6 col-sm-6">
+						<h5>
+							Similar Products
+						</h5>
+					</div>
+					<div class="col-6 col-sm-6" align="right">
+						<a href="">
+							See More
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="product-card">
+							<div class="cover">
+								<a href="detail_product.html">
+									<img src="assets/images/sepatu.jpeg" class="thubmnail-product">
+								</a>
+								<span class="sale">
+									50%
+								</span>
+							</div>
+							<div class="body-product">
+								<h5>
+									Nike Zoom X
+								</h5>
+								<h6>
+									AeroSports
+								</h6>
+								<div class="ratting-star">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-half-o" aria-hidden="true"></i>
+								</div>
+								<h4>
+									<span>Rp. 1.500.000 </span>Rp. 750.000
+								</h4>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="product-card">
+							<div class="cover">
+								<a href="detail_product.html">
+									<img src="assets/images/tas.jpeg" class="thubmnail-product">
+								</a>
+								<span class="sale">
+									60%
+								</span>
+							</div>
+							<div class="body-product">
+								<h5>								
+									Shoppie Paris
+								</h5>
+								<h6>
+									RD Shop
+								</h6>
+								<div class="ratting-star">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-half-o" aria-hidden="true"></i>
+								</div>
+								<h4>
+									<span>Rp. 1.000.000 </span>Rp. 400.000
+								</h4>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="product-card">
+							<div class="cover">
+								<a href="detail_product.html">
+									<img src="assets/images/jam.jpeg" class="thubmnail-product">
+								</a>
+								<span class="sale">
+									20%
+								</span>
+							</div>
+							<div class="body-product">
+								<h5>
+									Tissot
+								</h5>
+								<h6>
+									Aero Watch
+								</h6>
+								<div class="ratting-star">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-half-o" aria-hidden="true"></i>
+								</div>
+								<h4>
+									<span>Rp. 1.000.000 </span>Rp. 800.000
+								</h4>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="product-card">
+							<div class="cover">
+								<a href="detail_product.html">
+									<img src="assets/images/jaket.jpeg" class="thubmnail-product">
+								</a>
+								<span class="sale">
+									10%
+								</span>
+							</div>
+							<div class="body-product">
+								<h5>
+									Jacket Denim
+								</h5>
+								<h6>
+									RD Shop
+								</h6>
+								<div class="ratting-star">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-half-o" aria-hidden="true"></i>
+								</div>
+								<h4>
+									<span>Rp. 300.000 </span>Rp. 270.000
+								</h4>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	
+
+	<section id="footer" class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<div class="mb-3">
+						<h1>
+							<b>
+								Stock Shop
+							</b>
+						</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 col-lg-3">
+					<div class="mb-3">
+						<h5>
+							SERVICE 
+						</h5>
+						<li>
+							<a href="">
+								Help
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Payment
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Transfer Confirmation
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Our Partners
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Return Way
+							</a>
+						</li>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 col-lg-2">
+					<div class="mb-3">
+						<h5>
+							ABOUT  
+						</h5>
+						<li>
+							<a href="">
+								About Us
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Privacy policy
+							</a>
+						</li>
+						<li>
+							<a href="">								
+								Terms & Conditions
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Career
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Blog
+							</a>
+						</li>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-12 col-lg-3">
+					<div class="sosmed mb-3">
+						<h5>
+							FOLLOW ME
+						</h5>
+						<a href="">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fa fa-twitter-square" aria-hidden="true"></i>
+						</a>
+						<a href="">
+							<i class="fa fa-facebook-square" aria-hidden="true"></i>
+						</a>
+						<h5 class="mt-4">
+							DOWNLOAD APPS
+						</h5>
+						<a href="">
+							<img src="assets/images/play-store.png">
+						</a>
+						<a href="">
+							<img src="assets/images/app-store.png">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="border-top2">
+				<h6 class="pt-3" align="center">
+					Copyright ©2020 <span> StockShop </span>. All rights Reserved
+				</h6>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
