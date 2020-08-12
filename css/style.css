@@ -660,6 +660,9 @@ input[type=number] {
 	text-decoration: none;
 	color: #333;
 }
+.add-whistlist i{
+	font-size: 24px;
+}
 .shared span{
 	font-size: 16px;
 }
@@ -667,6 +670,9 @@ input[type=number] {
 	font-size: 18px;
 	color: #333;
 	margin-right: 5px;
+}
+.shared i{
+	font-size: 24px;
 }
 .shared a:hover{
 	text-decoration: none;
@@ -1185,6 +1191,69 @@ input[type=number] {
 	text-decoration: none;
 }
 
+/*===== Sale ======*/
+#page-sale{
+	margin-bottom: 50px;
+}
+.box-sale{
+	height: 300px;
+}
+.banner-sale{
+	max-height: 300px;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;	
+}
+.thumbnail-banner-sale img{
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;	
+}
+
+/*===== Brand ======*/
+#page-brand{
+	margin-bottom: 50px;
+}
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.listBrand {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btnBrand {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btnBrand:hover {
+  background-color: #ddd;
+}
+
+.btnBrand.active {
+  background-color: #666;
+  color: white;
+}
+
+
 
 /*===== Button , Color ======*/
 .grey{
@@ -1316,6 +1385,20 @@ input[type=number] {
 	.btn-filter{
 		display: block;
 	}
+	/*===== Sale ======*/
+	.box-sale{
+		height: 150px;
+	}
+	.banner-sale{
+		max-height: 150px;
+		width: 100%;
+	}
+	.thumbnail-banner-sale img{
+		height: 150px;
+		width: 100%;
+		object-fit: cover;
+		object-position: center;	
+	}
 }
 @media (min-width: 321px) and (max-width: 576px) {
 	/*--- header---*/
@@ -1410,6 +1493,20 @@ input[type=number] {
 	}
 	.btn-filter{
 		display: block;
+	}
+	/*===== Sale ======*/
+	.box-sale{
+		height: 150px;
+	}
+	.banner-sale{
+		max-height: 150px;
+		width: 100%;
+	}
+	.thumbnail-banner-sale img{
+		height: 150px;
+		width: 100%;
+		object-fit: cover;
+		object-position: center;	
 	}
 
 }
