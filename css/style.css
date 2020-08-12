@@ -509,7 +509,7 @@ body{
 #page-content{
 	padding-top: 100px;
 }
-/*========== page-content ============*/
+/*========== Detail Product ============*/
 #detail-product{
 	margin-bottom: 50px;
 }
@@ -1056,7 +1056,7 @@ input[type=number] {
 	border-radius: 0 !important;
 
 }
-.box-filter .form-control:focus{
+.form-control:focus{
 	outline: 0 !important;
 	border: 1px solid #229696;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0);
@@ -1080,13 +1080,22 @@ input[type=number] {
 .product-page h4 span{
 	font-size: 12px;
 }
-
+.box-filter .form-control{
+	border-radius: 0;
+}
+.box-filter .form-control:focus{
+	outline: 0 !important;
+	border: 1px solid #229696;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0);
+	color: #229696 !important;
+}
 .btn-filter{
 	display: none;
 	background-color: #3dd5d6;
 	color: #fff;
 	padding: 5px 20px;
 	position: fixed;
+	z-index: 150;
 	bottom: 70px;
 	right: 0;
 	left: 0;
@@ -1096,6 +1105,9 @@ input[type=number] {
 	text-align: center;
 	border-radius: 30px;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.btn-filter .form-control{
+	border-radius: 30px !important;
 }
 .overlay {
 	height: 100%;
@@ -1144,8 +1156,34 @@ input[type=number] {
 		right: 35px;
 	}
 }
-
-
+.pagination li{
+	border: 1px solid #3DD5D6;
+	border-radius: 0;
+	width: 30px;
+	height: 30px;
+	list-style: 10px;
+	padding-left: 9px;
+	padding-top: 2px;
+}
+.pagination li.active{
+	background-color: #3DD5D6;
+}
+.pagination li:hover{
+	background-color: #3DD5D6;
+}
+.pagination li:hover a{
+	color: #fff;
+}
+.pagination li.active a{
+	color: #fff;
+}
+.pagination li a{
+	color: #3DD5D6;
+	font-weight: 500;
+}
+.pagination li a:hover{
+	text-decoration: none;
+}
 
 
 /*===== Button , Color ======*/
@@ -1326,7 +1364,7 @@ input[type=number] {
 	}
 	/*======== Product Card ========*/
 	.thubmnail-product{
-		max-height: 100px;
+		max-height: 100px !important;
 	}
 	.body-product h5{
 		font-size: 14px;
