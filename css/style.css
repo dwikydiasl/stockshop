@@ -2,7 +2,7 @@
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;*/
 body{
-	font-family: 'Montserrat', sans-serif !important;
+	font-family: '', sans-serif !important;
 }
 /*======= Header ========*/
 #header{
@@ -77,6 +77,15 @@ body{
 }
 .cart-m{
 	margin-top: 0;
+}
+.box-search{
+	z-index: 150;
+}
+.brand-m{
+	display: none;
+}
+.brand-m img{
+	max-width: 40px;
 }
 /*======== Mobile Menu =========*/
 .mobile-menu{
@@ -1254,12 +1263,25 @@ input[type=number] {
 	.show-m{
 		display: block !important;
 	}
+	.brand-m{
+		display: block;
+	}
+	.brand{
+		display: none;
+	}
 	.box-search input{
 		width: 80%;
-		height: 25px;
+		height: 28px;
 	}
-	.cart-m{
-		margin-top: -24px;
+	.cart-m { 
+		margin-top: -27px !important;
+	}
+	.box-search i{
+		font-size: 18px !important;
+	}
+	.icon-search{
+		top: 3px;
+		right: 65px;
 	}
 	.cart-m i{
 		font-size: 18px !important;
@@ -1381,15 +1403,28 @@ input[type=number] {
 	.show-m{
 		display: block !important;
 	}
+	.brand-m{
+		display: block;
+	}
+	.brand{
+		display: none;
+	}
 	.box-search input{
-		width: 85%;
+		width: 80%;
 		height: 28px;
 	}
 	.cart-m { 
 		margin-top: -27px !important;
 	}
+	.box-search i{
+		font-size: 18px !important;
+	}
+	.icon-search{
+		top: 3px;
+		right: 65px;
+	}
 	.cart-m i{
-		font-size: 24px !important;
+		font-size: 18px !important;
 	}
 	.brand img{
 		max-width: 100px;
@@ -1503,21 +1538,38 @@ input[type=number] {
 }
 @media (min-width: 577px) and (max-width: 768px) {
 	/*--- header---*/
+	.scrolled#header{
+		height: 50px;
+		padding-top: 13px;
+	}
 	.hide-m{
 		display: none !important;
 	}
 	.show-m{
 		display: block !important;
 	}
+	.brand-m{
+		display: block;
+	}
+	.brand{
+		display: none;
+	}
 	.box-search input{
-		width: 85%;
+		width: 80%;
 		height: 28px;
 	}
 	.cart-m { 
 		margin-top: -27px !important;
 	}
+	.box-search i{
+		font-size: 18px !important;
+	}
+	.icon-search{
+		top: 3px;
+		right: 70px;
+	}
 	.cart-m i{
-		font-size: 24px !important;
+		font-size: 18px !important;
 	}
 	/*======== Mobile Menu =========*/
 	.mobile-menu{
