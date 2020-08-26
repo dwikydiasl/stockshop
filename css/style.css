@@ -1313,6 +1313,9 @@ input[type=number] {
 	padding: 5px 20px !important;
 	border: 1px solid #229696 !important;
 }
+.btn-primary:hover{
+	text-decoration: none;
+}
 .btn-white{
 	background-color: #fff !important;
 	color: #229696 !important;
@@ -1662,7 +1665,7 @@ input[type=number] {
 	}
 	.btn-checkout{
 		font-size: 18px;
-		padding: 5px 15px;
+		padding: 10px 25px;
 	}
 
 
