@@ -1184,6 +1184,46 @@ input[type=number] {
 	padding: 3px;
 	color: #fff;
 }
+.sale-timer h1{
+	font-weight: 700;
+	font-size: 28px;
+}
+.sale-timer ul{
+	margin-left: -40px;
+}
+.sale-timer li {
+	display: inline-block;
+	list-style-type: none;
+	font-size: 8px;
+	margin: 0 5px;
+	text-transform: uppercase;
+	width: 50px;
+}
+
+.sale-timer li span {
+	display: block;
+	font-size: 24px;
+	background-color: #229696;
+	border-radius: 5px;
+	padding: 3px;
+	margin-bottom: 5px;
+	color: #fff;
+}
+.sale-timer {
+	color: #333;
+	margin: 0 auto;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
 
 /*===== Brand ======*/
 #page-brand{

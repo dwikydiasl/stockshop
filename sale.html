@@ -159,12 +159,17 @@
 					</div>
 				</div>
 
+				<div class="sale-timer mt-3" align="center">
+					<h1>Flash Sale:</h1>
+					<ul>
+						<!-- <li><span id="days"></span>days</li> -->
+						<li><span id="hours"></span>Hours</li>
+						<li><span id="minutes"></span>Minutes</li>
+						<li><span id="seconds"></span>Seconds</li>
+					</ul>
+				</div>
 
-				<h1 class="title-sale mt-4" align="center">
-					Flash Sale  <span>05</span> : <span>40</span> : <span>05</span>
-				</h1>
-
-				<div class=" mt-4">
+				<div class=" mt-3">
 
 					<div class="row">
 						<div class="col-12 col-sm-3 col-md-3 col-lg-3">
@@ -616,7 +621,31 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	const second = 1000,
+	minute = second * 60,
+	hour = minute * 60,
+	day = hour * 24;
 
+	let countDown = new Date('Sep 30, 2020 00:00:00').getTime(),
+	x = setInterval(function() {    
+
+		let now = new Date().getTime(),
+		distance = countDown - now;
+
+		// document.getElementById('days').innerText = Math.floor(distance / (day)),
+		document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+		document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+		document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+      //do something later when date is reached
+      //if (distance < 0) {
+      //  clearInterval(x);
+      //  'IT'S MY BIRTHDAY!;
+      //}
+
+  }, second)
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>
