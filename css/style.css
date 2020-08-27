@@ -1198,8 +1198,8 @@ input[type=number] {
 	margin: 0 5px;
 	text-transform: uppercase;
 	width: 50px;
+	font-weight: 600;
 }
-
 .sale-timer li span {
 	display: block;
 	font-size: 24px;
